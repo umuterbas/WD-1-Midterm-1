@@ -4,6 +4,8 @@ $background_color_header: rgb(6, 107, 114);
 
 $icon_u_color: rgb(0, 0, 0);
 
+$links_color: blue;
+
 @media only screen and (max-width: 376px) {
     p {
         font-size: 13px;
@@ -11,6 +13,11 @@ $icon_u_color: rgb(0, 0, 0);
 
     h1 {
         font-size: 16px;
+
+    }
+
+    h3 {
+        font-size: 14px;
     }
 
     body {
@@ -81,38 +88,90 @@ $icon_u_color: rgb(0, 0, 0);
 
     }
 
- .links_twitter_clone {
-     cursor: pointer;
-     color: blue;
-     font-size: 13px;
-     word-spacing: 50px;
-     margin-top: 3%;
+    .links_twitter_clone {
+        cursor: pointer;
+        color: $links_color;
+        font-size: 13px;
+        word-spacing: 50px;
+        margin-top: 3%;
 
-     .twitter_clone_links {
-         text-decoration: underline;
-     }
+        .twitter_clone_links {
+            text-decoration: underline;
+        }
 
-     
-     
- }
 
- .contact_icons {
-     display: flex;
-     justify-content: space-around;
-     font-size: 12px;
-     
 
-     .contact_parts {
-         display: flex;
-         flex-direction: column;
+    }
 
-         .contact_adresses_text {
-             margin-top: 2%;
-             color: blue;
-             text-decoration: underline;
-         }
-     }
- }
+    .contact_icons {
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+
+
+        .contact_parts {
+            display: flex;
+            flex-direction: column;
+
+            .contact_adresses_text {
+                margin-top: 2%;
+                color: $links_color;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .inputs_contact {
+        text-align: start;
+        margin-top: 5%;
+
+        input {
+            background-color: grey;
+        }
+
+        .input_2 {
+            height: 40px;
+        }
+
+        .button_send_message {
+
+            height: 30px;
+            width: 100px;
+            background-color: $links_color;
+            margin-top: 2%;
+            border-radius: 10px;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .button_text {
+                color: white;
+
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icon_footer {
+        height: 40px;
+        border-radius: 50px;
+    }
+
+    .footer_name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2%;
+    }
+
+
 
 
 
