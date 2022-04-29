@@ -15,7 +15,6 @@
     background-color: rgb(188, 189, 233);
     text-align: center;
     align-items: center;
-    margin: 0 8%;
   }
   body header {
     display: flex;
@@ -27,6 +26,9 @@
   body header .icon_header {
     height: 40px;
     border-radius: 50px;
+  }
+  body header .header_right_part {
+    display: none;
   }
 
   .about_me {
@@ -63,6 +65,10 @@
   .experience_1 .job_description_list {
     margin-top: 5%;
     font-size: 12px;
+  }
+
+  .twitter_clone_img {
+    margin: 3% 0;
   }
 
   .links_twitter_clone {
@@ -134,4 +140,59 @@
     align-items: center;
     margin-left: 2%;
   }
+}
+h1 {
+  font-size: 25px;
+  margin-bottom: 2%;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(6, 107, 114);
+  justify-content: space-between;
+}
+header .icon_header {
+  border-radius: 2rem;
+  height: 50px;
+}
+header .header_left_part {
+  margin: 0 3%;
+}
+header .header_right_part {
+  color: white;
+  margin: 0 5%;
+}
+header .header_right_part .header_buttons {
+  margin: 0 1rem;
+}
+
+body {
+  background-color: rgb(188, 189, 233);
+}
+body .body_except_for_header {
+  margin: 0 10%;
+}
+body .body_except_for_header .all_sections {
+  margin: 10% 0;
+}
+body .body_except_for_header .about_me {
+  display: flex;
+}
+body .body_except_for_header .about_me .profile_pic {
+  height: 15rem;
+  border-radius: 20rem;
+}
+body .body_except_for_header .about_me .about_me_right_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 3%;
 }/*# sourceMappingURL=sass.css.map */

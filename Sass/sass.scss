@@ -6,6 +6,7 @@ $icon_u_color: rgb(0, 0, 0);
 
 $links_color: blue;
 
+
 @media only screen and (max-width: 376px) {
     p {
         font-size: 13px;
@@ -24,7 +25,7 @@ $links_color: blue;
         background-color: $background_color_all;
         text-align: center;
         align-items: center;
-        margin: 0 8%;
+
 
         header {
             display: flex;
@@ -37,6 +38,10 @@ $links_color: blue;
                 height: 40px;
                 border-radius: 50px;
 
+            }
+
+            .header_right_part {
+                display: none;
             }
         }
     }
@@ -88,6 +93,10 @@ $links_color: blue;
 
     }
 
+    .twitter_clone_img {
+        margin: 3% 0;
+    }
+
     .links_twitter_clone {
         cursor: pointer;
         color: $links_color;
@@ -98,7 +107,6 @@ $links_color: blue;
         .twitter_clone_links {
             text-decoration: underline;
         }
-
 
 
     }
@@ -172,7 +180,81 @@ $links_color: blue;
     }
 
 
+}
 
 
+h1{
+    font-size: 25px;
+    margin-bottom: 2%;
+}
+
+h2{
+    font-size: 22px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background-color: $background_color_header;
+    justify-content: space-between;
+
+    .icon_header {
+        border-radius: 2rem;
+        height: 50px;
+    }
+
+    .header_left_part {
+        margin: 0 3%;
+
+    }
+
+    .header_right_part {
+        color: white;
+        margin: 0 5%;
+
+
+
+        .header_buttons {
+            margin: 0 1rem;
+        }
+
+    }
+}
+
+body {
+    background-color: $background_color_all;
+    
+
+
+    .body_except_for_header {
+        margin: 0 10%;
+
+
+        .all_sections {
+            margin: 10% 0;
+        }
+
+        .about_me {
+            display: flex;
+            
+
+            .profile_pic {
+                height: 15rem;
+                border-radius: 20rem;
+            }
+
+            .about_me_right_part {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                line-height: 30px;
+                text-align: left;
+                margin-left: 3%;
+            }
+        }
+
+    }
 
 }
