@@ -1,1 +1,89 @@
-/*# sourceMappingURL=sass.css.map */
+@media only screen and (max-width: 376px) {
+  p {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  body {
+    background-color: rgb(188, 189, 233);
+    text-align: center;
+    align-items: center;
+    margin: 0 8%;
+  }
+  body header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(6, 107, 114);
+  }
+  body header .icon_header {
+    height: 40px;
+    border-radius: 50px;
+  }
+
+  .about_me {
+    margin-top: 10%;
+    line-height: 20px;
+  }
+  .about_me .profile_pic {
+    height: 70px;
+    border-radius: 70px;
+  }
+
+  .all_sections {
+    margin-top: 15%;
+    line-height: 20px;
+  }
+  .all_sections .big_headings {
+    display: flex;
+    justify-self: start;
+    margin-bottom: 7.5%;
+  }
+  .all_sections .skill_icons_div {
+    display: flex;
+    justify-content: space-around;
+  }
+  .all_sections .skill_icons_div .skill_icons_pics {
+    height: 30px;
+  }
+
+  .experience_1 {
+    margin-top: 7.5%;
+    line-height: 25px;
+    text-align: start;
+  }
+  .experience_1 .job_description_list {
+    margin-top: 5%;
+    font-size: 12px;
+  }
+
+  .links_twitter_clone {
+    cursor: pointer;
+    color: blue;
+    font-size: 13px;
+    word-spacing: 50px;
+    margin-top: 3%;
+  }
+  .links_twitter_clone .twitter_clone_links {
+    text-decoration: underline;
+  }
+
+  .contact_icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+  }
+  .contact_icons .contact_parts {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_icons .contact_parts .contact_adresses_text {
+    margin-top: 2%;
+    color: blue;
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=sass.css.map */
