@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./Sass/reset.css">
     <link rel="stylesheet" href="./Sass/sass.css">
     <script src="https://kit.fontawesome.com/bcd9c830bb.js" crossorigin="anonymous"></script>
+    <script src="./scripts/jquery-3.6.0.min.js"></script>
     <title>Portfolio-Umut</title>
+    
 </head>
 
 <body>
@@ -18,13 +20,20 @@
         </div>
 
         <div class="header_right_part">
-            <button class="header_buttons">About</button>
-            <button class="header_buttons">Skills</button>
-            <button class="header_buttons">Experience</button>
-            <button class="header_buttons">Project</button>
-            <button class="header_buttons">Contact</button>
+            <button id="about" class="header_buttons">About</button>
+            <button id="skills" class="header_buttons">Skills</button>
+            <button id="experience" class="header_buttons">Experience</button>
+            <button id="projects" class="header_buttons">Project</button>
+            <button id="contact" class="header_buttons">Contact</button>
 
         </div>
+        <script>
+        $("#about").on("click",function(){
+
+        $(".heading_projects").animate({scrollTop:'1000'},2000)
+
+        });
+        </script>
     </header>
 
     <div class="body_except_for_header">
@@ -166,19 +175,22 @@
 
             </div>
 
-            <footer class="all_sections">
 
-                <div>
-                    <img class="icon_footer" src="./Pics/Logo_U.png" alt="icon">
-                </div>
-                <div class="footer_name">
-                    Umut Can ERBAS
-                </div>
-
-            </footer>
         </section>
 
     </div>
+    <footer class="all_sections">
+
+        <div>
+            <img class="icon_footer" src="./Pics/Logo_U.png" alt="icon">
+        </div>
+        <div class="footer_name">
+            Umut Can ERBAS
+        </div>
+
+    </footer>
 </body>
+
+<script src="./scripts/js.js"></script>
 
 </html>
