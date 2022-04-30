@@ -6,6 +6,258 @@ $icon_u_color: rgb(0, 0, 0);
 
 $links_color: blue;
 
+$box_border_color: #e1e1e1;
+
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 3%;
+
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 2%;
+
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    background-color: $background_color_all;
+    font-family: Arial;
+
+
+
+    header {
+        display: flex;
+        align-items: center;
+        height: 70px;
+        background-color: $background_color_header;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        top: 0;
+
+
+        .icon_header {
+            border-radius: 2rem;
+            height: 50px;
+        }
+
+        .header_left_part {
+            margin: 0 3%;
+
+        }
+
+        .header_right_part {
+            color: white;
+            margin: 0 5%;
+
+            button {
+                cursor: pointer;
+            }
+
+
+
+            .header_buttons {
+                margin: 0 1rem;
+            }
+
+        }
+
+
+    }
+
+    section {
+        width: 90%;
+        border-radius: 25px;
+        border: 1px solid $box_border_color;
+        padding: 2%;
+        transition: transform .3s;
+    }
+
+    section:hover {
+        box-shadow: 0px 0px 50px grey;
+        transform: scale(1.02);
+        transition: transform .3s;
+    }
+
+
+
+    .body_except_for_header {
+        margin: 0 10%;
+
+
+        .all_sections {
+            margin: 10% 0;
+        }
+
+        .about_me {
+            display: flex;
+
+
+            .profile_pic {
+                max-height: 15rem;
+                max-width: 15rem;
+
+                border-radius: 25rem;
+            }
+        }
+
+        .about_me_right_part {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 30px;
+            text-align: left;
+            margin-left: 3%;
+        }
+    }
+
+    .skill_icons_div {
+        display: flex;
+        justify-content: space-around;
+
+        .skill_icons_pics {
+            height: 60px;
+            margin-top: 30%;
+        }
+
+    }
+
+    .experience {
+        line-height: 35px;
+    }
+
+
+
+    .project_1 {
+        display: flex;
+
+
+        .twitter_clone_img {
+            height: auto;
+            width: 600px;
+        }
+
+        .twitter_project_right_part {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 3%;
+            text-align: left;
+            line-height: 50px;
+            font-size: 18px;
+
+            .links_twitter_clone {
+                display: flex;
+                color: $links_color;
+                text-decoration: underline;
+                justify-content: center;
+                justify-content: space-around;
+
+            }
+
+
+        }
+
+
+    }
+
+    .project_2 {
+        display: flex;
+        margin-top: 6%;
+    }
+
+    .contact_icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 20px;
+
+
+
+        .contact_parts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .contact_adresses_text {
+                margin-top: 2%;
+                color: $links_color;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .inputs_contact {
+        text-align: start;
+        margin-top: 5%;
+
+        input {
+            background-color: grey;
+            width: 30rem;
+            height: 3rem;
+        }
+
+        .input_2 {
+            width: 30rem;
+            height: 6rem;
+        }
+
+        .button_send_message {
+
+            height: 50px;
+            width: 150px;
+            background-color: $links_color;
+            margin-top: 2%;
+            border-radius: 10px;
+            text-align: center;
+            vertical-align: middle;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .button_text {
+                color: white;
+
+            }
+
+            button {
+                cursor: pointer;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        bottom: 0;
+    }
+
+    .icon_footer {
+        height: 50px;
+        border-radius: 40px;
+    }
+
+    .footer_name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2%;
+        font-size: 18px;
+    }
+
+}
 
 // @media only screen and (max-width: 376px) {
 
@@ -58,7 +310,8 @@ $links_color: blue;
 //             flex-direction: column;
 
 //             .profile_pic {
-//                 height: 100px;
+//                 max-height: 100px;
+//                 max-width: 100px;
 //                 border-radius: 100px;
 
 //             }
@@ -189,222 +442,3 @@ $links_color: blue;
 
 //     }
 // }
-
-
-h1 {
-    font-size: 25px;
-    margin-bottom: 3%;
-
-}
-
-h2 {
-    font-size: 20px;
-    margin-bottom: 2%;
-}
-
-h3 {
-    font-size: 18px;
-    margin-top: 2%;
-
-}
-
-p {
-    font-size: 16px;
-}
-
-body {
-    background-color: $background_color_all;
-
-    header {
-        display: flex;
-        align-items: center;
-        height: 70px;
-        background-color: $background_color_header;
-        justify-content: space-between;
-        
-
-        .icon_header {
-            border-radius: 2rem;
-            height: 50px;
-        }
-
-        .header_left_part {
-            margin: 0 3%;
-
-        }
-
-        .header_right_part {
-            color: white;
-            margin: 0 5%;
-
-
-
-            .header_buttons {
-                margin: 0 1rem;
-            }
-
-        }
-    }
-
-
-
-    .body_except_for_header {
-        margin: 0 10%;
-
-
-        .all_sections {
-            margin: 10% 0;
-        }
-
-        .about_me {
-            display: flex;
-
-
-            .profile_pic {
-                height: 15rem;
-                border-radius: 20rem;
-            }
-        }
-
-        .about_me_right_part {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            line-height: 30px;
-            text-align: left;
-            margin-left: 3%;
-        }
-    }
-
-    .skill_icons_div {
-        display: flex;
-        justify-content: space-around;
-
-        .skill_icons_pics {
-            height: 60px;
-            margin-top: 30%;
-        }
-
-    }
-
-    .experience {
-        line-height: 35px;
-    }
-
-    
-
-    .project_1 {
-        display: flex;
-
-
-        .twitter_clone_img {
-            height: auto;
-            width: 600px;
-        }
-
-        .twitter_project_right_part {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin-left: 3%;
-            text-align: left;
-            line-height: 50px;
-            font-size: 18px;
-
-            .links_twitter_clone {
-                display: flex;
-                color: $links_color;
-                text-decoration: underline;
-                justify-content: center;
-                justify-content: space-around;
-
-            }
-
-
-        }
-
-    
-    }
-
-    .project_2 {
-        display: flex;
-        margin-top: 6%;
-    }
-
-    .contact_icons {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 20px;
-
-
-
-        .contact_parts {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            .contact_adresses_text {
-                margin-top: 2%;
-                color: $links_color;
-                text-decoration: underline;
-            }
-        }
-    }
-
-    .inputs_contact {
-        text-align: start;
-        margin-top: 5%;
-
-        input {
-            background-color: grey;
-            width: 30rem;
-            height: 3rem;
-        }
-
-        .input_2 {
-            width: 30rem;
-            height: 6rem;
-        }
-
-        .button_send_message {
-
-            height: 40px;
-            width: 120px;
-            background-color: $links_color;
-            margin-top: 2%;
-            border-radius: 10px;
-            text-align: center;
-            vertical-align: middle;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .button_text {
-                color: white;
-
-            }
-        }
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        bottom: 0%;
-    }
-
-    .icon_footer {
-        height: 50px;
-        border-radius: 40px;
-    }
-
-    .footer_name {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 2%;
-        font-size: 18px;
-    }
-
-}
