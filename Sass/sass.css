@@ -1,137 +1,163 @@
-@media only screen and (max-width: 376px) {
-  p {
-    font-size: 13px;
-  }
+h1 {
+  font-size: 25px;
+  margin-bottom: 3%;
+}
 
-  h1 {
-    font-size: 16px;
-  }
+h2 {
+  font-size: 20px;
+  margin-bottom: 2%;
+}
 
-  h3 {
-    font-size: 14px;
-  }
+h3 {
+  font-size: 18px;
+  margin-top: 2%;
+}
 
-  body {
-    background-color: rgb(188, 189, 233);
-    text-align: center;
-    align-items: center;
-    margin: 0 8%;
-  }
-  body header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
-    background-color: rgb(6, 107, 114);
-  }
-  body header .icon_header {
-    height: 40px;
-    border-radius: 50px;
-  }
+p {
+  font-size: 16px;
+}
 
-  .about_me {
-    margin-top: 10%;
-    line-height: 20px;
-  }
-  .about_me .profile_pic {
-    height: 70px;
-    border-radius: 70px;
-  }
-
-  .all_sections {
-    margin-top: 15%;
-    line-height: 20px;
-  }
-  .all_sections .big_headings {
-    display: flex;
-    justify-self: start;
-    margin-bottom: 7.5%;
-  }
-  .all_sections .skill_icons_div {
-    display: flex;
-    justify-content: space-around;
-  }
-  .all_sections .skill_icons_div .skill_icons_pics {
-    height: 30px;
-  }
-
-  .experience_1 {
-    margin-top: 7.5%;
-    line-height: 25px;
-    text-align: start;
-  }
-  .experience_1 .job_description_list {
-    margin-top: 5%;
-    font-size: 12px;
-  }
-
-  .links_twitter_clone {
-    cursor: pointer;
-    color: blue;
-    font-size: 13px;
-    word-spacing: 50px;
-    margin-top: 3%;
-  }
-  .links_twitter_clone .twitter_clone_links {
-    text-decoration: underline;
-  }
-
-  .contact_icons {
-    display: flex;
-    justify-content: space-around;
-    font-size: 12px;
-  }
-  .contact_icons .contact_parts {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact_icons .contact_parts .contact_adresses_text {
-    margin-top: 2%;
-    color: blue;
-    text-decoration: underline;
-  }
-
-  .inputs_contact {
-    text-align: start;
-    margin-top: 5%;
-  }
-  .inputs_contact input {
-    background-color: grey;
-  }
-  .inputs_contact .input_2 {
-    height: 40px;
-  }
-  .inputs_contact .button_send_message {
-    height: 30px;
-    width: 100px;
-    background-color: blue;
-    margin-top: 2%;
-    border-radius: 10px;
-    text-align: center;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .inputs_contact .button_send_message .button_text {
-    color: white;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .icon_footer {
-    height: 40px;
-    border-radius: 50px;
-  }
-
-  .footer_name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2%;
-  }
+body {
+  background-color: rgb(188, 189, 233);
+}
+body header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background-color: rgb(6, 107, 114);
+  justify-content: space-between;
+}
+body header .icon_header {
+  border-radius: 2rem;
+  height: 50px;
+}
+body header .header_left_part {
+  margin: 0 3%;
+}
+body header .header_right_part {
+  color: white;
+  margin: 0 5%;
+}
+body header .header_right_part .header_buttons {
+  margin: 0 1rem;
+}
+body .body_except_for_header {
+  margin: 0 10%;
+}
+body .body_except_for_header .all_sections {
+  margin: 10% 0;
+}
+body .body_except_for_header .about_me {
+  display: flex;
+}
+body .body_except_for_header .about_me .profile_pic {
+  height: 15rem;
+  border-radius: 20rem;
+}
+body .body_except_for_header .about_me_right_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 30px;
+  text-align: left;
+  margin-left: 3%;
+}
+body .skill_icons_div {
+  display: flex;
+  justify-content: space-around;
+}
+body .skill_icons_div .skill_icons_pics {
+  height: 60px;
+  margin-top: 30%;
+}
+body .experience {
+  line-height: 35px;
+}
+body .project_1 {
+  display: flex;
+}
+body .project_1 .twitter_clone_img {
+  height: auto;
+  width: 600px;
+}
+body .project_1 .twitter_project_right_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3%;
+  text-align: left;
+  line-height: 50px;
+  font-size: 18px;
+}
+body .project_1 .twitter_project_right_part .links_twitter_clone {
+  display: flex;
+  color: blue;
+  text-decoration: underline;
+  justify-content: center;
+  justify-content: space-around;
+}
+body .project_2 {
+  display: flex;
+  margin-top: 6%;
+}
+body .contact_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+}
+body .contact_icons .contact_parts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .contact_icons .contact_parts .contact_adresses_text {
+  margin-top: 2%;
+  color: blue;
+  text-decoration: underline;
+}
+body .inputs_contact {
+  text-align: start;
+  margin-top: 5%;
+}
+body .inputs_contact input {
+  background-color: grey;
+  width: 30rem;
+  height: 3rem;
+}
+body .inputs_contact .input_2 {
+  width: 30rem;
+  height: 6rem;
+}
+body .inputs_contact .button_send_message {
+  height: 40px;
+  width: 120px;
+  background-color: blue;
+  margin-top: 2%;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .inputs_contact .button_send_message .button_text {
+  color: white;
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 0%;
+}
+body .icon_footer {
+  height: 50px;
+  border-radius: 40px;
+}
+body .footer_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2%;
+  font-size: 18px;
 }/*# sourceMappingURL=sass.css.map */
