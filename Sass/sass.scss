@@ -83,13 +83,15 @@ body {
         border: 1px solid $box_border_color;
         padding: 2%;
         transition: transform .3s;
+
+        &:hover {
+            box-shadow: 0px 0px 50px grey;
+            transform: scale(1.02);
+            transition: transform .3s;
+        }
     }
 
-    section:hover {
-        box-shadow: 0px 0px 50px grey;
-        transform: scale(1.02);
-        transition: transform .3s;
-    }
+    
 
 
 
@@ -260,186 +262,187 @@ body {
 
 }
 
-// @media only screen and (max-width: 376px) {
-
-//     p {
-//         font-size: 13px;
-//     }
-
-//     h1 {
-//         font-size: 16px;
-
-//     }
-
-//     h3 {
-//         font-size: 14px;
-//     }
-
-//     body {
-//         background-color: $background_color_all;
-//         text-align: center;
-//         align-items: center;
+@media only screen and (max-width: 376px) {
 
 
-//         header {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             height: 60px;
-//             background-color: $background_color_header;
+    p {
+        font-size: 13px;
+    }
 
-//             .icon_header {
-//                 height: 40px;
-//                 border-radius: 50px;
+    h1 {
+        font-size: 16px;
 
-//             }
+    }
 
-//             .header_right_part {
-//                 display: none;
-//             }
-//         }
+    h3 {
+        font-size: 14px;
+    }
 
-//         .body_except_for_header {
-//             margin: 0 8%;
-//         }
+    body {
+        background-color: $background_color_all;
+        text-align: center;
+        align-items: center;
 
 
-//         .about_me {
-//             margin-top: 10%;
-//             line-height: 20px;
-//             display: flex;
-//             flex-direction: column;
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background-color: $background_color_header;
 
-//             .profile_pic {
-//                 max-height: 100px;
-//                 max-width: 100px;
-//                 border-radius: 100px;
+            .icon_header {
+                height: 40px;
+                border-radius: 50px;
 
-//             }
-//         }
+            }
 
-//         .all_sections {
+            .header_right_part {
+                display: none;
+            }
+        }
 
-//             margin-top: 15%;
-//             line-height: 20px;
-
-//             .big_headings {
-//                 display: flex;
-//                 justify-self: start;
-//                 margin-bottom: 7.5%;
-
-//             }
-
-//             .skill_icons_div {
-//                 display: flex;
-//                 justify-content: space-around;
-
-//                 .skill_icons_pics {
-//                     height: 30px;
-//                 }
-
-//             }
-//         }
-
-//         .experience_1 {
-//             margin-top: 7.5%;
-//             line-height: 25px;
-//             text-align: start;
-
-//             .job_description_list {
-//                 margin-top: 5%;
-//                 font-size: 12px;
-//             }
+        .body_except_for_header {
+            margin: 0 8%;
+        }
 
 
-//         }
+        .about_me {
+            margin-top: 10%;
+            line-height: 20px;
+            display: flex;
+            flex-direction: column;
 
-//         .twitter_clone_img {
-//             margin: 3% 0;
-//         }
+            .profile_pic {
+                max-height: 100px;
+                max-width: 100px;
+                border-radius: 100px;
 
-//         .links_twitter_clone {
-//             cursor: pointer;
-//             color: $links_color;
-//             font-size: 13px;
-//             word-spacing: 50px;
-//             margin-top: 3%;
+            }
+        }
 
-//             .twitter_clone_links {
-//                 text-decoration: underline;
-//             }
+        .all_sections {
 
+            margin-top: 15%;
+            line-height: 20px;
 
-//         }
+            .big_headings {
+                display: flex;
+                justify-self: start;
+                margin-bottom: 7.5%;
 
-//         .contact_icons {
-//             display: flex;
-//             justify-content: space-around;
-//             font-size: 12px;
+            }
 
+            .skill_icons_div {
+                display: flex;
+                justify-content: space-around;
 
-//             .contact_parts {
-//                 display: flex;
-//                 flex-direction: column;
+                .skill_icons_pics {
+                    height: 30px;
+                }
 
-//                 .contact_adresses_text {
-//                     margin-top: 2%;
-//                     color: $links_color;
-//                     text-decoration: underline;
-//                 }
-//             }
-//         }
+            }
+        }
 
-//         .inputs_contact {
-//             text-align: start;
-//             margin-top: 5%;
+        .experience_1 {
+            margin-top: 7.5%;
+            line-height: 25px;
+            text-align: start;
 
-//             input {
-//                 background-color: grey;
-//             }
-
-//             .input_2 {
-//                 height: 40px;
-//             }
-
-//             .button_send_message {
-
-//                 height: 30px;
-//                 width: 100px;
-//                 background-color: $links_color;
-//                 margin-top: 2%;
-//                 border-radius: 10px;
-//                 text-align: center;
-//                 vertical-align: middle;
-//                 display: flex;
-//                 justify-content: center;
-//                 align-items: center;
-
-//                 .button_text {
-//                     color: white;
-
-//                 }
-//             }
-//         }
-
-//         footer {
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: center;
-//         }
-
-//         .icon_footer {
-//             height: 40px;
-//             border-radius: 50px;
-//         }
-
-//         .footer_name {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             margin-left: 2%;
-//         }
+            .job_description_list {
+                margin-top: 5%;
+                font-size: 12px;
+            }
 
 
-//     }
-// }
+        }
+
+        .twitter_clone_img {
+            margin: 3% 0;
+        }
+
+        .links_twitter_clone {
+            cursor: pointer;
+            color: $links_color;
+            font-size: 13px;
+            word-spacing: 50px;
+            margin-top: 3%;
+
+            .twitter_clone_links {
+                text-decoration: underline;
+            }
+
+
+        }
+
+        .contact_icons {
+            display: flex;
+            justify-content: space-around;
+            font-size: 12px;
+
+
+            .contact_parts {
+                display: flex;
+                flex-direction: column;
+
+                .contact_adresses_text {
+                    margin-top: 2%;
+                    color: $links_color;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .inputs_contact {
+            text-align: start;
+            margin-top: 5%;
+
+            input {
+                background-color: grey;
+            }
+
+            .input_2 {
+                height: 40px;
+            }
+
+            .button_send_message {
+
+                height: 30px;
+                width: 100px;
+                background-color: $links_color;
+                margin-top: 2%;
+                border-radius: 10px;
+                text-align: center;
+                vertical-align: middle;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .button_text {
+                    color: white;
+
+                }
+            }
+        }
+
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .icon_footer {
+            height: 40px;
+            border-radius: 50px;
+        }
+
+        .footer_name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 2%;
+        }
+
+
+    }
+}
